@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- LINK KE CSS -->
+ <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+
+<!-- FONT DARI GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<!-- CDNJS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+
+<!-- icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="USH.png" width="35%">
+        </a>
+        <div class="navbar-nav">
+            <div class="menu">
+                <div class="item"><a href="index.html"><i class=""></i>Home</a></div>
+                <div class="item">
+                    <a href="#" class="sub-btn" ><i></i>Profile<i class="fas fa-angle-down dropdown"></i></a>
+                        <div class="sub-menu">
+                            <a href="Logo.html" class="filosofi">Filosofi</a>
+                            <a href="#" class="struktur">Struktur ></a>
+                            <div class="sub-menu-menu">
+                                <a href="pengin.html" class="p">Pengurus Inti</a>
+                                <a href="kemendagri.html" class="p">Kementrian Dalam Negeri</a>
+                                <a href="kemenlu.html" class="p">Kementrian Luar Negeri</a>
+                                <a href="kominfo.html" class="p">Kementrian Komunikasi & Informasi</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="item"><a href="hubkam.html"><i class=""></i>Hubungi Kami</a></div>
+            </div>
+        </div>
+    
+        <!-- Menu icon untuk mobile -->
+        <div class="navbar-extra">
+            <a href="#" id="menu-box"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    
+
+    <section class="grub" id="grub">
+        <div class="fogrub">
+            <h1>Kementrian Dalam Negeri</h1>
+            <div class="gamgrub">
+                <video controls autoplay loop src="vidKemenlu.mp4" width="250px"></video>
+            </div>
+
+            <div class="kata">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam tempore, ipsam earum dignissimos maxime doloremque fuga architecto molestias quia maiores suscipit voluptate assumenda illum placeat, cum accusamus quod porro quidem.
+            </p>
+        </div>
+        </div>
+
+
+    </section>
+
+    <section class="dake">
+        <div class="ketua">
+            <img src="ketuakemenlu.jpg">
+            <h2>
+                Ketua Devisi
+            </h2>
+            <p>
+                Firda Intan Sartika
+            </p>
+        </div>
+    </section>
+
+    <h1>
+        Anggota
+    </h1>
+    <section class="angdagri">
+
+        <div class="fotoang1">
+            <img src="kemenlu1.jpg">
+            <p>
+                Anandio Vebra Kusuma
+            </p>
+        </div>
+        
+        <div class="fotoang1">
+            <img src="kemenlu2.jpg">
+            <p>
+                Rizal Maekke Fauzi
+            </p>
+            
+        </div>
+        <div class="fotoang1">
+            <img src="kemenlu3.jpg">
+            <p>
+                Natanael Richie Arahkata
+            </p>
+        </div>
+
+        <div class="fotoang2">
+            <img src="kemenlu4.jpg">
+            <p>
+                Siti Hartatik
+            </p>
+        </div>
+
+        <div class="fotoang2">
+            <img src="kemenlu5.jpg">
+            <p>
+                Kevin Dwi Kumara Siri Manggalo
+            </p>
+        </div>
+
+        <div class="fotoang2">
+            <img src="kemenlu6.jpg">
+            <p>
+                Tiara Syifa Laksmi
+            </p>
+        </div>
+
+    </section>
+
+   <!-- Calendar Icon -->
+<div class="container">
+    <div class="calendar-icon" onclick="toggleWrapper()">📅</div>
+
+    <!-- Wrapper for ACARA and BERITA -->
+    <div class="wrapper" id="wrapper">
+        <!-- ACARA Section -->
+        <div class="section-container">
+            <div class="section" onclick="toggleContent('acaraAber', 'beritaAber')">
+                <h2>ACARA</h2>
+            </div>
+            <div id="acaraAber" class="aber">
+                <div class="event">
+                    <img src="https://via.placeholder.com/50" alt="Event Image">
+                    <div>
+                        <p>Wisuda Ke-IV Sarjana Pendidikan "Jaya, K..."</p>
+                        <span>Sabtu, 19 Okt 2024 01:47 WIB</span>
+                    </div>
+                </div>
+                <div class="event">
+                    <img src="https://via.placeholder.com/50" alt="Event Image">
+                    <div>
+                        <p>PENERIMAAN TAMU RACANA (PTR) 2023 Gudep...</p>
+                        <span>Rabu, 01 Nov 2023 03:40 WIB</span>
+                    </div>
+                </div>
+                <div class="more">SELENGKAPNYA</div>
+            </div>
+        </div>
+
+        <!-- BERITA Section -->
+        <div class="section-container">
+            <div class="section" onclick="toggleContent('beritaAber', 'acaraAber')">
+                <h2>BERITA</h2>
+            </div>
+            <div id="beritaAber" class="aber">
+                <div class="news">
+                    <img src="https://via.placeholder.com/50" alt="News Image">
+                    <div>
+                        <p><a href="#">Diklat Anak BEM</a></p>
+                        <span>Sabtu, 19 Oktober 2024 08:00 WIB</span>
+                    </div>
+                </div>
+                <div class="more"><a href="#">SELENGKAPNYA</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer section mulai-->
+<footer>
+    <div class="social">
+        <a href="https://www.instagram.com/bem.ush/"><i data-feather="instagram"></i></a>
+
+        <a href="https://www.youtube.com/@universitas_sugeng_hartono"><i data-feather="youtube"></i></a>
+    </div>
+
+
+    <div class="links">
+    </div>
+    <div class="credit">
+        <p>Created by <a href="">Gabriel</a>. | &copy2024</p>
+    </div>
+</footer>
+
+
+
+<!--UNTUK ICON  -->
+<script>
+    feather.replace();
+  </script>
+
+
+<!-- UNTUK KE JS -->
+ <SCRIPT src="script.js"></SCRIPT>
+</body>
+</html>

@@ -1,0 +1,1127 @@
+
+/* WARNA YANG TELAH DITETAPKAN */
+:root{
+    --primary: #0e1a4d;
+    --bg: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* UNTUK KESELURUHAN */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none; 
+}
+
+
+/* BAGIAN BODY */
+body{
+    background-color: var(--bg) ;
+    color: #010101;
+
+}
+
+/* BAGIAN NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    list-style-type: none;
+    backdrop-filter: blur(8px);
+}
+
+/* LOGO */
+.navbar .logo{
+    width: 10%;
+}
+
+.navbar .navbar-nav .menu{
+    display: flex;
+
+}
+
+.navbar .navbar-nav .menu .sub-menu a, .sub-menu-menu a{
+    padding: 0;
+    display: flex;
+}
+
+
+.navbar .navbar-nav .menu .sub-menu, .sub-menu-menu{
+    display: none;
+
+}
+
+.navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+    position: relative;
+    top: -47px;
+    left: 170px;
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover{
+
+    color: var(--primary)
+}
+
+.navbar .navbar-nav a::after{
+    content: '' ;
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.01rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+
+}
+
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbar ,.navbar-extra a {
+    color: #010101;
+    margin: 0 0.5rem;
+}
+
+.navbar ,.navbar-extra a:hover{
+
+    color: var(--primary);
+}
+
+#menu-box{
+    display: none;
+}
+
+
+.home{
+    min-height: 155vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(BEM3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 60%;
+    position: relative;
+    mask-image: linear-gradient(rgb(45, 41, 41)80%, rgba(30, 25, 25, 0.812));
+}
+
+.home .content{
+    padding: 5rem 10%;
+    max-width: 90rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 7REM;
+
+}
+
+.home .content h2{
+    font-size: 7rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 5px 5px 5px black;
+    
+ }
+
+.home .content span{
+    color: #fff;
+}
+
+
+.bem{
+    background-color: #1C1C1C;
+    color: #B0BEC5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.bem, .sd{
+    padding: 0 0 5rem 0;
+}
+
+.bem .sd h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 1.5rem 0;
+    font-weight: bolder;
+}
+
+.bem .sd p, .gam p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 0 2rem 0;
+    font-weight: lighter;
+
+}
+
+.gam{
+    display: flex;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.gam img{
+    width: 30%;
+}
+
+.gam p{
+    padding-top: 7rem;
+    margin: 0 0 3rem 5rem;
+}
+
+.gam span{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 0 3rem 0;
+}
+
+.tombol{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tombol button, .bem .sd button{
+    display: block;
+    margin: auto;
+    border-radius: 2rem;
+    width: 11rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #ffffff;
+}
+
+.tombol button a, .bem .sd button a{
+    font-size: 1.3rem;
+}
+
+.tombol button::after, .bem .sd button::after{
+    content: "";
+}
+
+.tombol button:hover, .bem .sd button:hover{
+    box-shadow: 3px 5px #888888;
+}
+
+
+
+/* VISI MISI */
+.visimisi, .struktur, .bem, .sosial{
+    padding: 7rem 7% 1.3rem;
+}
+
+.visimisi{
+    background-color: #0A1128;
+    color: #C0C0C0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.visimisi .vm h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.visimisi .vm a{
+    display: block;
+    text-align: center;
+    
+}
+
+.visimisi .vm p{
+    font-size: 20px;
+    margin: 1rem 0 0 0;
+    text-align: justify;
+
+}
+
+
+
+/* .struktur .struk h2{
+    color: #010101;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.struktur .struk .gam-struk{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.struktur .struk .gam-struk img{
+   max-width: 100%;
+   height: auto;
+} */
+
+.kegiatan{
+    position: relative;
+    text-align: center;
+    background-color: #2C2F33;
+    color: #B0BEC5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kegiatan .kegiatanbem{
+    padding-top: 7rem;
+}
+
+.kegiatan .kegiatanbem h2{
+    font-size: 3rem;
+}
+
+.kegiatan .kegiatanbem .image img{
+    width: 100%;
+    height: 60%;
+}
+
+.kegiatan .kegiatanbem .text{
+    position: absolute;
+    top: 35%;
+    right: 50%;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent black background */
+    color: #fff;
+
+}
+
+.kegiatan .kegiatanbem .text h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.kegiatan .kegiatanbem .text p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+
+/* BERITA DAN ACARA */
+.container {
+    position: fixed;
+    top: 10rem;
+    right: 10px;
+}
+
+/* Calendar icon */
+.calendar-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #002855;
+    background-color: #e3000f;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Wrapper for ACARA and BERITA content */
+.wrapper {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 10rem;
+    right: 0;
+    background-color: #002855;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* Each section container */
+.section-container {
+    padding: 10px;
+}
+
+.section {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e3000f;
+    text-align: center;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Replace 'content' with 'aber' */
+.aber {
+    display: none;
+    padding: 10px;
+}
+
+.aber .event, .aber .news {
+    background-color: #003b6f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.aber .event img, .aber .news img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.aber .event p, .aber .news p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.aber .news a, .more a, .aber .event a{
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.aber .news a::after, .more a::after, .aber .event a::after{
+    content: "";
+}
+
+.aber .news a:hover, .more a:hover, .aber .event a:hover{
+    text-decoration: underline;
+}
+
+.aber .event span, .aber .news span {
+    font-size: 12px;
+    display: block;
+    color: #ccc;
+}
+
+.aber .more {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #b3b3b3;
+    cursor: pointer;
+}
+
+
+/*footer*/
+footer{
+    background-color: var(--primary);
+    text-align: center;
+
+}
+
+footer .social{
+    padding: 1rem 0;
+}
+
+footer .social a{
+    color: #fff;
+    margin: 1rem;
+
+}
+
+
+
+footer .social a:hover, footer .links a:hover{
+    color: var(--bg);
+}
+
+footer .links a{
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit{
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+footer .credit a{
+    color: var(--bg);
+    font-weight: 700;
+}
+
+/* TAMPILAN PADA HP, TABLET ATAU YG LAINNYA */
+
+/* Untuk resolusi HP */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    html {
+        font-size: 30%;
+    }
+
+
+    
+
+    #menu-box{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #010101;
+        width: 90rem;
+        transition: 0.3s;
+        overflow-y: scroll;
+        height: 530px;
+    }
+
+    .navbar .navbar-nav .menu{
+        display:block;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav .menu .item a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 5px 30px;
+        line-height: 60px;
+    }
+
+    .navbar-nav .menu .item a:hover{
+        background: red;
+        transition: 0.3s;
+    }
+
+    .navbar-nav .menu .item i{
+        margin-right: 15px;
+    }
+
+    .navbar-nav .menu .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+    }
+
+    .navbar-nav .menu .item .sub-menu{
+        background: #010101;
+    }
+   
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding-right: 5rem;
+        font-size: 2rem;
+        position: relative;
+    }
+
+    .home .content{
+        padding: 1rem;
+    }
+
+    .home{
+        background-image: url(BEM2.jpg);
+        background-position: center center;
+        background-size:cover;
+        justify-content: center;
+        min-height: 100vh; 
+        mask-image: none; 
+        background-repeat: no-repeat;
+        position: relative;
+        mask-image: linear-gradient(rgba(0, 0, 0, 1)90%, rgba(0, 0, 0, 0));
+    }
+
+    .kegiatan .kegiatanbem .text{
+        top: 50%;
+        }
+
+        .navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        
+       
+}
+
+/* Untuk resolusi tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    html {
+        font-size: 90%;
+    }
+    #menu-box{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #010101;
+        width: 50rem;
+        transition: 0.3s;
+        overflow-y: scroll;
+        height: 530px;
+    }
+
+    .navbar .navbar-nav .menu{
+        display:block;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav .menu .item a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 5px 30px;
+        line-height: 60px;
+    }
+
+    .navbar-nav .menu .item a:hover{
+        background: red;
+        transition: 0.3s;
+    }
+
+    .navbar-nav .menu .item i{
+        margin-right: 15px;
+    }
+
+    .navbar-nav .menu .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+    }
+
+    .navbar-nav .menu .item .sub-menu{
+        background: #010101;
+    }
+   
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding-right: 5rem;
+        font-size: 2rem;
+        position: relative;
+    }
+
+    .home .content{
+        padding: 1rem;
+    }
+
+    .home{
+        background-image: url(BEM2.jpg);
+        background-position: center center;
+        background-size:cover;
+        align-items: center;
+        min-height: 100vh; 
+        mask-image: none; 
+        background-repeat: no-repeat;
+        position: relative;
+        mask-image: linear-gradient(rgba(0, 0, 0, 1)90%, rgba(0, 0, 0, 0));
+    }
+
+    .kegiatan .kegiatanbem .text{
+        top: 50%;
+        }
+
+        .navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+}
+
+
+/* ----------------------LOGO----------------------------- */
+
+.profile{
+    padding: 7rem 0 0 0;
+    background-color: #1E2A38;  
+
+}
+
+.profile .logo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile .logo img{
+    width: 30%;
+    margin: auto;
+}
+
+.profile h2, .struktur .struk h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #FFFFFF;
+    font-size: 29px;
+
+}
+
+.profile  span{
+    color: #FFFFFF;
+}
+
+.profile .filosofi{
+    margin: 0 0 0 0;
+    padding: 1rem 7% 1.3rem;
+    color: #FFFFFF;
+}
+
+.profile .filosofi h1{
+    margin: 0 0 1rem 0;
+    font-size: 29px;
+}
+
+.profile .filosofi p{
+    text-align: justify;
+    margin: 0 0 3rem 0;
+    font-size: 18px;
+}
+
+.judul{
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.judul h2{
+    font-size: 29px;
+}
+
+.filologo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .card {
+    background-color: #1C1C1C;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .card p{
+    color: #9CA3AF;
+  }
+
+  .card img {
+    width: 100px;
+    height: auto;
+  }
+
+
+
+  /* -------------HUBKAM---------------------------- */
+
+  .email{
+    padding: 7rem 7% 1.3rem;
+    background-color: #000000;
+}
+
+.hubungi{
+    padding: 7rem 0 5rem 0;
+    background-color: #021853;
+    color: #fff;
+}
+
+.hubungi h1{
+    text-align: center;
+    background-color: #ffc800;
+    text-shadow: 0 0 5px black;
+    font-size: 20px;
+}
+
+
+
+.profile1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.videoprofile{
+    background-color: #0e1a4d;
+    border-radius: 5px;
+}
+
+.videoprofile h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin: 2rem 10rem 2rem 25rem;
+}
+.contak, .contak1 {
+    display: flex;
+    margin: 0 0 3rem 0;
+}
+.contak span, .contak1 span {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 0 4rem;
+}
+.contak p {
+    margin: 10px 0 0 10rem;
+    font-size: 20px;
+    
+}
+
+.contak1 p {
+    margin: 0 0 0 12.5rem;
+    font-size: 20px;
+    
+}
+
+.video-section video {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 315px;
+    margin: 2rem 0 0 0;
+}
+
+
+.video{
+    width: 700px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: auto;
+    display: flex;
+
+}
+
+
+
+.pera {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 0 0 10%;
+    
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="email"], select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.pera button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.pera button:hover {
+    background-color: #555;
+}
+
+#menu-box{
+    display: none;
+}
+
+
+/* Untuk resolusi HP */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    html {
+        font-size: 30%;
+    }
+
+
+    
+
+    #menu-box{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #010101;
+        width: 90rem;
+        transition: 0.3s;
+        overflow-y: scroll;
+        height: 530px;
+    }
+
+    .navbar .navbar-nav .menu{
+        display:block;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav .menu .item a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 5px 30px;
+        line-height: 60px;
+    }
+
+    .navbar-nav .menu .item a:hover{
+        background: red;
+        transition: 0.3s;
+    }
+
+    .navbar-nav .menu .item i{
+        margin-right: 15px;
+    }
+
+    .navbar-nav .menu .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+    }
+
+    .navbar-nav .menu .item .sub-menu{
+        background: #010101;
+    }
+   
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding-right: 5rem;
+        font-size: 2rem;
+        position: relative;
+    }
+
+    .home .content{
+        padding: 1rem;
+    }
+
+    .home{
+        background-image: url(BEM2.jpg);
+        background-position: center center;
+        background-size:cover;
+        justify-content: center;
+        min-height: 100vh; 
+        mask-image: none; 
+        background-repeat: no-repeat;
+        position: relative;
+        mask-image: linear-gradient(rgba(0, 0, 0, 1)90%, rgba(0, 0, 0, 0));
+    }
+
+    .kegiatan .kegiatanbem .text{
+        top: 50%;
+        }
+
+        .navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+        
+       
+}
+
+/* Untuk resolusi tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    html {
+        font-size: 90%;
+    }
+    #menu-box{
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #010101;
+        width: 50rem;
+        transition: 0.3s;
+        overflow-y: scroll;
+        height: 530px;
+    }
+
+    .navbar .navbar-nav .menu{
+        display:block;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar-nav .menu .item a{
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 5px 30px;
+        line-height: 60px;
+    }
+
+    .navbar-nav .menu .item a:hover{
+        background: red;
+        transition: 0.3s;
+    }
+
+    .navbar-nav .menu .item i{
+        margin-right: 15px;
+    }
+
+    .navbar-nav .menu .item a .dropdown{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: 0.3s ease;
+    }
+
+    .navbar-nav .menu .item .sub-menu{
+        background: #010101;
+    }
+   
+
+    .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding-right: 5rem;
+        font-size: 2rem;
+        position: relative;
+    }
+
+    .home .content{
+        padding: 1rem;
+    }
+
+    .home{
+        background-image: url(BEM2.jpg);
+        background-position: center center;
+        background-size:cover;
+        align-items: center;
+        min-height: 100vh; 
+        mask-image: none; 
+        background-repeat: no-repeat;
+        position: relative;
+        mask-image: linear-gradient(rgba(0, 0, 0, 1)90%, rgba(0, 0, 0, 0));
+    }
+
+    .kegiatan .kegiatanbem .text{
+        top: 50%;
+        }
+
+        .navbar .navbar-nav .menu .sub-menu .sub-menu-menu .p{
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+}
+
+
+
+
+/* --------------------------------KEMENLU---------------------------------------- */
+
+.grub, .dake{
+    padding: 7rem 7% 1.3rem;
+    background-color: #000000;
+    color: #fff;
+}
+
+.grub .gamgrub video{
+    display: block;
+    margin: auto;
+}
+
+.grub .fogrub h1{
+    text-align: center;
+}
+
+.grub .kata{
+    background-color: #fff;
+    color: #000000;
+}
+
+.dake .ketua img{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.dake .ketua h2, .dake .ketua p{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.angdagri .fotoang1 p, .angdagri .fotoang2 p{
+    max-width: 400px;
+    text-align: center;
+    margin: 0 0 5rem 0;
+    font-size: 1.6rem;
+}
+
+.angdagri{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.fotoang1 img{
+    width: 400px;
+    margin: 0 5rem 0 0;
+}
+
+.fotoang2 img{
+    width: 400px; 
+    margin: 0 7rem 0 0;
+}
+
+
+
+
+

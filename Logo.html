@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- LINK KE CSS -->
+ <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+
+<!-- FONT DARI GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<!-- CDNJS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="UTF-8"></script>
+
+<!-- icon -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <img src="USH.png" width="35%">
+        </a>
+        <div class="navbar-nav">
+            <div class="menu">
+                <div class="item"><a href="index.html"><i class=""></i>Home</a></div>
+                <div class="item">
+                    <a href="#" class="sub-btn" ><i></i>Profile<i class="fas fa-angle-down dropdown"></i></a>
+                        <div class="sub-menu">
+                            <a href="Logo.html" class="filosofi">Filosofi</a>
+                            <a href="#" class="struktur">Struktur ></a>
+                            <div class="sub-menu-menu">
+                                <a href="pengin.html" class="p">Pengurus Inti</a>
+                                <a href="kemendagri.html" class="p">Kementrian Dalam Negeri</a>
+                                <a href="kemenlu.html" class="p">Kementrian Luar Negeri</a>
+                                <a href="kominfo.html" class="p">Kementrian Komunikasi & Informasi</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="item"><a href="hubkam.html"><i class=""></i>Hubungi Kami</a></div>
+            </div>
+        </div>
+    
+        <!-- Menu icon untuk mobile -->
+        <div class="navbar-extra">
+            <a href="#" id="menu-box"><i data-feather="menu"></i></a>
+        </div>
+    </nav>
+    
+<section class="profile" id="profile">
+
+        <h2>BEM-KM USH <br><span> "Arta Loka"</span></h2>
+
+        <div class="logo">
+            <img src="LogoBem.png">
+        </div>
+
+        <div class="filosofi">
+            <h1>
+                Filosofi Nama BEM
+            </h1>
+            <P>
+               Arta Loka mengandung arti bahwa BEM adalah badan yang bertujuan untuk menghadirkan makna, tujuan, dan perubahan positif di dunia atau lingkungan sekitar mereka. Filosofi ini mengajak BEM untuk bekerja bukan hanya demi kepentingan internal, tetapi juga untuk menjadi penggerak perubahan yang bermanfaat bagi seluruh mahasiswa dan lingkungan masyarakat di sekitarnya.
+            </P>
+
+            
+        </div>
+        
+        <div class="judul">
+            <h2>Filosofi Logo</h2>
+        <div class="filologo">
+            <div class="card">
+              <img src="globe.png">
+              <h3>Globe</h3>
+              <p>Merepresentasikan bahwa kabinet "Arta Loka" berorientasi pada komunitas global dan mengajak mahasiswa untuk memiliki pandangan yang luas, menyentuh kehidupan sosial dan lingkungan secara lebih holistik.
+            </p>
+            </div>
+      
+            <div class="card">
+              <img src="obor.png">
+              <h3>Obor</h3>
+              <p>Melambangkan Arta (makna), yang membawa pencerahan, pengetahuan, dan tujuan. Ini adalah simbol dari kebijaksanaan dan wawasan yang memimpin kabinet menuju visi yang lebih tinggi.
+            </p>
+            </div>
+      
+            <div class="card">
+              <img src="teratai.png">
+              <h3>Bunga Teratai</h3>
+              <p>Simbol kemurnian, kelahiran kembali, dan spiritualitas, terutama dalam budaya Asia. Ini bisa melambangkan pertumbuhan dan pencapaian yang diperoleh melalui proses pengembangan diri.
+            </p>
+            </div>
+      
+            <div class="card">
+              <img src="blue.png">
+              <img src="gold.jpg">
+              <h3>Warna Biru dan Emas</h3>
+              <p>
+                <span>Biru : </span>melambangkan keseriusan dan tanggung jawab, berkomitmen menjalankan kegiatan, kebijakan, dan advokasi dengan penuh rasa tanggung jawab.
+                <br>
+                <span>Emas : </span>menekankan kesuksesan, prestasi, dan nilai luhur, mencerminkan tujuan mulia dari kabinet.
+
+              </p>
+            </div>
+      
+          </div>
+        </div>
+
+</section>
+
+   <!-- Calendar Icon -->
+   <div class="container">
+    <div class="calendar-icon" onclick="toggleWrapper()">📅</div>
+
+    <!-- Wrapper for ACARA and BERITA -->
+    <div class="wrapper" id="wrapper">
+        <!-- ACARA Section -->
+        <div class="section-container">
+            <div class="section" onclick="toggleContent('acaraAber', 'beritaAber')">
+                <h2>ACARA</h2>
+            </div>
+            <div id="acaraAber" class="aber"></div>
+        </div>
+
+        <!-- BERITA Section -->
+        <div class="section-container">
+            <div class="section" onclick="toggleContent('beritaAber', 'acaraAber')">
+                <h2>BERITA</h2>
+            </div>
+            <div id="beritaAber" class="aber"></div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer section mulai-->
+<footer>
+    <div class="social">
+        <a href="https://www.instagram.com/bem.ush/"><i data-feather="instagram"></i></a>
+
+        <a href="https://www.youtube.com/@universitas_sugeng_hartono"><i data-feather="youtube"></i></a>
+    </div>
+
+
+    <div class="links">
+    </div>
+    <div class="credit">
+        <p>Created by <a href="">Gabriel</a>. | &copy2024</p>
+    </div>
+</footer>
+
+
+
+
+<!--UNTUK ICON  -->
+<script>
+    feather.replace();
+  </script>
+
+
+<!-- UNTUK KE JS -->
+ <SCRIPT src="script.js"></SCRIPT>
+</body>
+</html>
